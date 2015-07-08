@@ -132,7 +132,7 @@ realdf$datetime<- ymd_hms(paste(realdf$Date, realdf$Time))
 with(realdf, hist(Global_active_power, main = "Global Active Power", xlab = "Global Active Power (kilowatts)", col = "red"))
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
+![plot 1](plot1.png) 
 
 ```r
 ## Export Plot 1 in .png
@@ -152,7 +152,7 @@ dev.off()
 with(realdf, plot(datetime, Global_active_power, type ="l", xlab = "", ylab = "Global Active Power (kilowatts)"))
 ```
 
-![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8-1.png) 
+![plot 2](plot2.png) 
 
 ```r
 ## export Plot 2 in png
@@ -174,7 +174,7 @@ with(realdf, lines(datetime, Sub_metering_3, col ="blue", xlab="", ylab=""))
 legend("topright", pch = "___", col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
 ```
 
-![plot of chunk unnamed-chunk-9](figure/unnamed-chunk-9-1.png) 
+![plot 3](plot3.png) 
 
 ```r
 # export plot 3 in png
@@ -206,7 +206,7 @@ legend("topright", pch = "___", col = c("black", "blue", "red"), legend = c("Sub
 with(realdf, plot(datetime, Global_reactive_power, type = "l"))
 ```
 
-![plot of chunk unnamed-chunk-10](figure/unnamed-chunk-10-1.png) 
+![plot 4](plot4.png) 
 
 ```r
 par(op) # reset graphical parameters
