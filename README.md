@@ -1,10 +1,3 @@
----
-title: ""
-author: "Ludi Akue (Lietwin)"
-date: "July 7, 2015"
-output: html_document
----
-
 ## Introduction
 
 This document describes the overall data manipulation and plotting made to fulfill the Course Project 1 of Coursera __Exploratory Data Analysis__ (my 3rd course in the Data Science Specialization).
