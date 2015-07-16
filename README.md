@@ -9,7 +9,7 @@ The overall goals of this project are:
 The original assignement can be found [here](https://github.com/rdpeng/ExData_Plotting1/blob/master/README.md)
 
 > Important: the code uses the __{lubridate}__ package. Ensure the package is installed.  
-> Important (2) : the UCI data set download usea a MaCOS __method = curl__. Please drop it if you are on Windows (see prepareData.R). 
+> Important (2) : the UCI data set download uses a MaCOS __method = curl__. Please drop it if you are on Windows (see prepareData.R). 
 
 Note: This document has been generated from a Rmarkdown document.
 
@@ -79,7 +79,7 @@ loadAll2 <- function(link){
         dldate <- date()
         print(paste("Data set is downloaded on:", dldate))
         writeLines(dldate, "downloadedat.txt")
-        dset <- df <- read.csv(unz(description="temp.zip", filename = "household_power_consumption.txt"), sep = ";", na.strings = "?")
+        dset <- read.csv(unz(description="temp.zip", filename = "household_power_consumption.txt"), sep = ";", na.strings = "?")
         message("===> Data set is sucessfully loaded with :")
         message(paste("===> Number of observations:", nrow(dset)))
         message(paste("===> Number of variables:", ncol(dset)))
